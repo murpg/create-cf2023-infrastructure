@@ -1,3 +1,4 @@
+# Your Terraform configuration here
 resource "aws_instance" "web" {
   ami                    = var.ami_id
   instance_type          = "t3.medium"
@@ -20,7 +21,7 @@ resource "aws_security_group" "sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["74.95.90.101/32"]
+    cidr_blocks = ["74.95.90.101/32","69.194.133.0/24","172.56.208.18/32"]
   }
 
   ingress {

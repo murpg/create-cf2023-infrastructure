@@ -8,3 +8,18 @@ variable "ami_id" {
   type        = string
   description = "AMI ID with multi-site CommandBox cbwctl tool"
 }
+
+variable "hostname" {
+  description = "The Terraform Cloud hostname"
+  type        = string
+}
+
+variable "organization" {
+  description = "The Terraform Cloud organization name"
+  type        = string
+}
+
+variable "workspace_name" {
+  description = "The Terraform Cloud workspace name"
+  type        = string
+}
